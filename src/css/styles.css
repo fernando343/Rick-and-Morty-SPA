@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #3c484e;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://i.postimg.cc/fbZXDjdz/thumb-1920-633270.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*Header*/
+
+.Header-main {
+  background-color: #111;
+}
+
+.header-content{
+  margin: 0 auto;
+  width: 85%;
+}
+
+.header-content img{
+  width: 200px;
+}
+
+/*Home*/
+
+.characters {
+  margin: 5px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.character-item {
+  width: calc(33.3% - 70px);
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: #222;
+  box-shadow: 0px 0px 24px 1px rgba(151,195,48,0.55);
+}
+
+.character-item img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.character-info {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-info .status {
+  border: 1px solid;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: ease-in-out 400ms;
+}
+
+.character-info .alive{
+  border-color: #97C330;
+  color: #97C330;
+}
+
+.character-info .alive:hover{
+  color: #222;
+  background-color: #97C330;
+}
+
+.character-info .dead{
+  border-color: #f8261f;
+  color: #f8261f;
+}
+
+.character-info .dead:hover{
+  color: #222;
+  background-color: #f8261f;
+}
+
+.character-info .unknown{
+  border-color: #28a5ff;
+  color: #28a5ff;
+}
+
+.character-info .unknown:hover{
+  color: #222;
+  background-color: #28a5ff;
+}
+
+/*Charter*/
+.flex-card{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters-inner{
+  width: 300px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 24px 1px rgba(151,195,48,0.55);
+}
+
+.characters-inner img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-info{
+  padding: 20px;
+}
+
+@media(min-width:768px){
+  .characters-inner{
+    display: flex;
+    width: auto;
+  }
+  .characters-inner img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+  .card-info h2, .card-info h3{
+    padding: 5px 0;
+  }
+}
+
+/*Error 404*/
+.error404{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width:768px){
+  .error404 img{
+    width: 550px;
+    border-radius: 50%;
+  }
+}
+
+.error404 h2{
+  position: absolute;
+  font-size: 150px;
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: rgba(255, 255, 255, 0.664);
+  text-shadow: 0px 10px 10px rgba(151,195,48,1);
+  transform:  rotateX(25deg);
+}
